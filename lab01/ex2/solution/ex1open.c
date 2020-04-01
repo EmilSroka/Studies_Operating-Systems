@@ -7,7 +7,8 @@
  
 #define BUFSIZE 1024
  
-int main (int argc, char **argv) {
+int main (int argc, char **argv) 
+{
     int f1, c;
     char b[BUFSIZE], *n1;
  

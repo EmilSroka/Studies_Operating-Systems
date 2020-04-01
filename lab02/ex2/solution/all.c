@@ -27,13 +27,9 @@ ssize_t readall(int fd, const void *buf, size_t nbyte)
 		if ((n = read(fd, &((char *)buf)[nread], nbyte - nread)) <= 0) {
 			if (errno == EINTR && n == -1)
 				continue;
-            else if (n == 0){
-				if(nread < 2){
-					return 0;
-				} else {
-					return nread;
-				}
-			} else
+            else if (n == 0)
+				return nread;
+			else
 				return -1;
 		}
 		nread += n;

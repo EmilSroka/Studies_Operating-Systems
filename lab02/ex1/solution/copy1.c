@@ -7,7 +7,8 @@
     
 #define BUFSIZE 512
 
-void handleError(int errorNumber){
+void handleError(int errorNumber)
+{
     if(errorNumber == ENOENT){
         fprintf(stderr, "No such file or directory\n");
     } else if(errorNumber == EACCES){
@@ -18,7 +19,7 @@ void handleError(int errorNumber){
     exit(EXIT_FAILURE); 
 }
     
-void copy(char *from, char *to)  /* has a bug */
+void copy(char *from, char *to)
 {
     int errnoCopy;
     int fromfd = -1, tofd = -1;
@@ -51,12 +52,15 @@ void copy(char *from, char *to)  /* has a bug */
         }
     }
         	   
-    close(fromfd);
-    close(tofd);
+    if (close(fromfd) == -1 || close(tofd) == -1)
+    {
+        handleError(errno);
+    }
     return;
 }
     
-int main(int argc, char **argv){
+int main(int argc, char **argv)
+{
     if (argc != 3)
     {
         fprintf(stderr,"usage: %s from_pathname to_pathname\n", argv[0]);
