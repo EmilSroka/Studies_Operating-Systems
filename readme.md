@@ -5,4 +5,5 @@ Repo contains my solutions to exercises posted on this [page](https://ai.ia.agh.
 
 Labs:
 1. Introduction: manual conventions, compiling, error handling  
-2. Files: opening, writing, reading, file description and descriptors, offset manipulation
+2. Files: opening, writing, reading, file description and descriptors, offset manipulation  
+3. Files: reading metadata, asynchronous reading, aiocb structure
