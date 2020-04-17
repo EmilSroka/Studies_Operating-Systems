@@ -1,2 +1,2 @@
 # Zadanie 2.4  
-Korzystając z funkcji mierzących czas z poprzedniego laboratorium proszę napisać program testujący ile czasu zajmują funkcje kopiujące copy2 (copy1 z napisaną przez nas obsługą błędów) i copy3
+Korzystając z funkcji mierzących czas z poprzedniego laboratorium proszę napisać program testujący ile czasu zajmują funkcje kopiujące `copy2` (`copy1` z napisaną przez nas obsługą błędów) i `copy3`

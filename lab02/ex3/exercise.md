@@ -9,11 +9,11 @@ Do otwarcia pliku użyto jednego deskryptora fd3. Następnie wykonano kolejno op
 > Wskaźnik jest na 199 pozycji.
 > Został przeczytany fragment pliku od 100 do 199 pozycji.
 
-Czy każdorazowe poprzedzenie operacji pisania ustawieniem wskaźnika pliku na końcu pliku za pomocą funkcji lseek daje taki sam rezultat jak otwarcie pliku w trybie z ustawioną flagą O_APPEND? Odpowiedź uzasadnij.
+Czy każdorazowe poprzedzenie operacji pisania ustawieniem wskaźnika pliku na końcu pliku za pomocą funkcji `lseek` daje taki sam rezultat jak otwarcie pliku w trybie z ustawioną flagą `O_APPEND`? Odpowiedź uzasadnij.
 
 > Tak, ponieważ przy użyciu flagi O_APPEND funkcja write używa niejawnie lseek.
 
-Jak wygląda wywołanie funkcji lseek które:
+Jak wygląda wywołanie funkcji `lseek` które:
 - ustawia wskaźnik na zadanej pozycji?  
 > lseek(fileDescriptor, position, SEEK_SET);
 - znajduje koniec pliku?  
@@ -21,6 +21,6 @@ Jak wygląda wywołanie funkcji lseek które:
 - zwraca bieżącą pozycję wskaźnika?  
 > lseek(fileDescriptor, 0, SEEK_CUR);
  
-Proszę zmodyfikować (uprościć) funkcję z files/backwards.c zamieniając wywołania lseek i read na użycie funkcji pread. 
+Proszę zmodyfikować (uprościć) funkcję z `files/backwards.c` zamieniając wywołania `lseek` i `read` na użycie funkcji `pread`. 
 
-Napisać program realizujący funkcjonalność polecenia tail.
+Napisać program realizujący funkcjonalność polecenia `tail`.
