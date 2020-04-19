@@ -18,12 +18,18 @@ int main(int argc, char *argv[]){
                exit(-1);
           }
      }
-     sleep(1);
+
+     for(int i=0; i<10; i++){
+          pthread_join(threadsd[i], NULL);
+     }
+     
+     printf("End of the main thread!\n");
      return 0;
 }
 // ----------------------------------------------------------
 
 void *PrintHello(void *arg){
-    printf("Next boring 'Hello World!' version! >> %d\n", *((int*) arg));
-    return NULL;
+     sleep(1);
+     printf("Next boring 'Hello World!' version! >> %d\n", *((int*) arg));
+     return NULL;
 }
