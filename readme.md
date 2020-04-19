@@ -8,4 +8,4 @@ Labs:
 2. Files: opening, writing, reading, file description and descriptors, offset manipulation  
 3. Files: reading metadata, asynchronous reading, aiocb structure
 4. Processes: forking process, exec function family, setting up process limit
-5. Threads: creating threads, synchronization
+5. Threads: creating and cancaling threads, synchronization
