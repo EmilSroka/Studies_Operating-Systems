@@ -9,4 +9,4 @@ Labs:
 3. Files: reading metadata, asynchronous reading, aiocb structure
 4. Processes: forking process, `exec` function family, setting up process limit
 5. Threads: creating and cancaling threads, synchronization
-6. Unnamed pipes: creating, writing, reading, chekcking `PIPE_BUF`
+6. Unnamed pipes: creating, writing, reading, chekcking `PIPE_BUF`, changing stdin and stdout
