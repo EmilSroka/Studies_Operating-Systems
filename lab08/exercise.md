@@ -1,0 +1,3 @@
+# Zadanie 8
+Zaimplementuj program rozwązujący podany problem:  
+> Problem stołówki studenckiej: Student przebywając w stołówce wywołuje kolejno dwie procedury: dine i leave (zjada obiad i wychodzi). Po wywołaniu dine a przed wywołaniem leave student jest w stanie gotowym do wyjścia. By zapewnić studentowi komfort psychiczny nie może on obiadować w samotności. Taki stan ma miejsce, gdy każdy inny student, który wywołał dine, wywołał też leave zanim rozważany student zakończył procedurę dine.
