@@ -11,3 +11,4 @@ Labs:
 5. Threads: creating and cancaling threads, synchronization
 6. Unnamed pipes: creating, writing, reading, chekcking `PIPE_BUF`, changing stdin and stdout
 7. Named pipes: FIFO, POSIX IPC, nonblocking mode
+8. System V: semaphores, message queues, shared memory segments
