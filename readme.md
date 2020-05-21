@@ -13,3 +13,4 @@ Labs:
 7. Named pipes: FIFO, POSIX IPC, nonblocking mode
 8. System V: semaphores, message queues, shared memory segments
 9. Terminal: terminal attributes manipulation, linux sessions, daemons
+10. Sockets: creating sockets, `SOCK_STREAM`, sending and receiving data
